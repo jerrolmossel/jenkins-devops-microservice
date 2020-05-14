@@ -1,6 +1,6 @@
-//SCRIPTED
+// SCRIPTED
 
-//DECLARATIVE
+// DECLARATIVE
 pipeline {
 	agent any
 	stages {
@@ -19,15 +19,16 @@ pipeline {
 				echo "Integration Test"
 			}
 		}
-	} post {
-		always {
-			echo 'I am awesome. I run always'
-		}
-		success {
-			echo 'I run when you are successful'
-		}
-		failure {
-			echo 'I run when you fail'
-		}
-	}
+	} 
+	// post {
+	// 	always {
+	// 		echo 'I am awesome. I run always'
+	// 	}
+	// 	success {
+	// 		echo 'I run when you are successful'
+	// 	}
+	// 	failure {
+	// 		echo 'I run when you fail'
+	// 	}
+	// }
 }
